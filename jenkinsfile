@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('call this job only') { 
             steps { 
-                sh 'http://18.206.99.84:8080/job/jenkinspipelinejob/build?token=chethan' 
+                sh 'echo "this is first job"' 
             }
         }
     }

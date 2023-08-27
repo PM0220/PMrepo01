@@ -1,0 +1,13 @@
+pipeline { 
+    agent any 
+    options {
+        skipStagesAfterUnstable()
+    }
+    stages {
+        stage('call this job only') { 
+            steps { 
+                sh 'http://18.206.99.84:8080/job/jenkinspipelinejob/build?token=chethan' 
+            }
+        }
+    }
+}

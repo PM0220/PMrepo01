@@ -1,20 +1,8 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('this is my for task02') {
             steps {
-                //
+                sh 'echo "this is 2nd task" '
             }
         }
-        stage('Test') {
-            steps {
-                //
-            }
-        }
-        stage('Deploy') {
-            steps {
-                //
-            }
-        }
-    }
-}
